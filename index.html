@@ -17,21 +17,21 @@
         <section class="content">
 
             <div class="time-box">
-                <h2>60:00</h2>
+                <h2 id="countdown"></h2>
             </div>
 
             <div class="type-time">
-                <button class="pomodoro-button">
+                <button class="pomodoro-button" onclick="pomodoro()">
                     pomodoro
                 </button>
-                <button class="relax-button">
+                <button class="relax-button" onclick="relax()">
                     relax
                 </button>
             </div>
 
             <div class="submmits">
-                <input type="submit" id="start" value="start!">
-                <input type="submit" id="pause" value="pause">
+                <input type="submit" id="start" value="start!"  onclick="startTimer()">
+                <input type="submit" id="pause" value="pause" onclick="pauseTimer()">
             </div>
         </section>
     </main>
