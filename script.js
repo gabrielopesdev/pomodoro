@@ -2,11 +2,8 @@ const countdownEl = document.querySelector('#countdown')
 const body = document.querySelector('.body')
 
 function pomodoro() {
-    let audio = document.querySelector('#audio')
     countdownEl.innerHTML = "60:00"
     countdownEl.value = 60
-
-    audio.play()
 
     body.style.backgroundColor = '#cd523c';
 }
@@ -19,6 +16,9 @@ function relax() {
 }
 
 function startTimer() {
+
+    let audio = document.querySelector('#audio')
+    audio.play()
 
     if (countdownEl.value == 60) {
 
