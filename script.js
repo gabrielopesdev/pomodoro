@@ -2,17 +2,20 @@ const countdownEl = document.querySelector('#countdown')
 const body = document.querySelector('.body')
 
 function pomodoro() {
+    let audio = document.querySelector('#audio')
     countdownEl.innerHTML = "60:00"
     countdownEl.value = 60
 
-    body.style.backgroundColor = '##cd523c';
+    audio.play()
+
+    body.style.backgroundColor = '#cd523c';
 }
 
 function relax() {
     countdownEl.innerHTML = "10:00"
     countdownEl.value = 10
 
-    body.style.backgroundColor = '#000';
+    body.style.backgroundColor = '#4b4b4b';
 }
 
 function startTimer() {

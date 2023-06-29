@@ -69,9 +69,15 @@ body {
     margin-top: 20px;
 }
 
-.content .submmits .start {
+.content .submmits #start {
     border-color: rgb(34, 139, 34, 0.5);
 }
+
+
+.content .submmits #pause {
+    border-color: rgb(128, 4, 4);
+}
+
 
 .content .submmits input {
     width: 300px;
