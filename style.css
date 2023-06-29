@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(205,82,60);
+    background-color: #cd523c;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -67,6 +67,10 @@ body {
 
 .content .submmits {
     margin-top: 20px;
+}
+
+.content .submmits .start {
+    border-color: rgb(34, 139, 34, 0.5);
 }
 
 .content .submmits input {
