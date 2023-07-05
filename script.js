@@ -17,6 +17,10 @@ function relax() {
 
 function startTimer() {
 
+    let startButton = document.querySelector('#start')
+
+    startButton.setAttribute('value', "pause")
+
     let audio = document.querySelector('#audio')
     audio.play()
 
@@ -29,8 +33,8 @@ function startTimer() {
 
         function updateCountdown() {
 
-            let minutes = Math.floor(time / 60)
-            let seconds = time % 60
+            var minutes = Math.floor(time / 60)
+            var seconds = time % 60
 
             seconds = seconds < 10 ? '0' + seconds:seconds
 
@@ -48,8 +52,8 @@ function startTimer() {
 
         function updateCountdown() {
 
-            let minutes = Math.floor(time / 60)
-            let seconds = time % 60
+            var minutes = Math.floor(time / 60)
+            var seconds = time % 60
 
             seconds = seconds < 10 ? '0' + seconds:seconds
 
@@ -59,5 +63,5 @@ function startTimer() {
         }
         
     }
-
+    
 }
